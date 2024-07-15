@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+body{
+   background-image: url(/images/bg-pattern-desktop.svg);
+   background-repeat: no-repeat;
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+ width: 739px;
+ 
+
+
+}
+.head {
+    border: none;
+    padding: 20px;
+    margin-top: 25px;
+    margin-left: 45px;
+    margin-bottom: 60px;
+}
+
+.bg-mobile {
+   display: none;
+    
+}
+
+
+.image {
+    display: flex;
+    flex-direction:row;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content h1 {
+    font-size: 78px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 10px
+    
+
+}
+
+.content span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 200;
+}
+
+.content p {
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    line-height: 30px;
+}
+
+.input-field #email {
+    margin-left: 50px;
+    border-radius: 24px;
+    padding: 14px;
+    width: 340px;
+    margin-bottom: 3PX;
+   
+    outline: none;
+    border: 1px solid hsl(0, 36%, 70%);
+
+}
+
+
+ .input-field .error {
+    position: relative;
+    top: 8px;
+    margin-left: -115px;
+    
+}
+.msg {
+    position: relative;
+    margin-left: 70px;
+    color: hsl(0, 36%, 70%);
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+.input-field button {
+    border: none;
+    padding: 11px;
+    border-radius: 24px;
+    width: 80px;
+    position: relative;
+    top: 4px;
+    margin-left: -43px;
+    background-color: hsl(0, 90%, 80%);
+   
+    
+}
+
+@media (max-width:600px) {
+
+    body {
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        width: 475px;
+    }
+
+    .head {
+        border: none;
+        padding: 15px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 170px;
+    }
+   
+
+    .image{
+        display: none;
+    
+       }
+    .bg-mobile {
+        display: block;
+        margin-top: 20px;
+        margin-left: 135px;
+        margin-bottom: 70px;
+        width: 600px;
+    }
+    
+       .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 180px;
+       }
+       
+       .input-field {
+        margin-left: 180px;
+       }
+       
+       
+
+
+
+}
